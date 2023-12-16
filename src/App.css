@@ -32,7 +32,22 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.friend-box {
+  width: 25%;
+  margin: 10px auto;
+  background-color: rebeccapurple;
+  color: goldenrod;
+  padding: 20px;
+  border-radius: 15%;
+  box-shadow: 5px 5px 5px slateblue;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 1.8rem;
+  text-transform: capitalize;
 }
