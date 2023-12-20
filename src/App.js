@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
 
 const cssApply = {
@@ -31,6 +31,9 @@ const App = () => {
       {/* dynamic way */}
       {employees.map(employee => <Person name={employee.name} job={employee.job} ></Person>)};
       {products.map(product => <Product name={product.name} price={product.price} brand={product.brand}></Product>)}
+
+      <Distric name="Naogaon" special="Rice and fish"></Distric>
+      <Distric name="Bogra" special="Doi"></Distric>
     </div>
   );
 };
@@ -63,4 +66,16 @@ const Product = (props) => {
   )
 };
 
+const Distric = (props) => {
+  const [power, setPower] = useState(1);
+  const getPower = () => setPower(power * 2);
+  return (
+    <article style={{ backgroundColor: "pink", padding: '10px', margin: '10px' }}>
+      <h2>Name: {props.name}</h2>
+      <h3>Specialty: {props.special}</h3>
+      <p>Power: {power}</p>
+      <button onClick={getPower}>Boots Power</button>
+    </article>
+  )
+};
 export default App;
