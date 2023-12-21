@@ -1,0 +1,15 @@
+.container {
+    width: 1000px;
+    background: cadetblue;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+article {
+    margin: 10px;
+    background-color: azure;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}

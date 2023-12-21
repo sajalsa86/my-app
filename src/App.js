@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './App.css';
+import Post from './components/Post.js/Post';
 
 const cssApply = {
   color: 'black',
@@ -34,6 +35,7 @@ const App = () => {
 
       <Distric name="Naogaon" special="Rice and fish"></Distric>
       <Distric name="Bogra" special="Doi"></Distric>
+      <Post></Post>
     </div>
   );
 };
